@@ -4,10 +4,10 @@
   },
   "scripts": {
     "server": "cd server && nodemon server.js --ignore client",
-    "start:dev": "concurrently \"cd server && npm run server\" \" npm run dev\"",
+    "start:dev": "concurrently \"cd server && npm run server\" \"npm run dev\"",
     "start": "npm run build && cd server && node server.js",
-    "build": "npm install && npm run build",
+    "build": "npm run dev",
     "install": "npm install",
-    "client": "npm start"
+    "client": "cd client && npm start"
   }
 }
