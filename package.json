@@ -9,6 +9,6 @@
     "client": "cd client && npm start",
     "dev": "webpack-dev-server",
     "build": "webpack --mode production",
-    "start": "npm run build && cd server && node server.js"
+    "start": "npm run build && npm run start:server"
   }
 }
