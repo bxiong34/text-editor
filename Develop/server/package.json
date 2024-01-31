@@ -5,7 +5,8 @@
     "main": "server.js",
     "scripts": {
         "server": "nodemon server.js --ignore client",
-        "build": "npm install && npm run build"
+        "build": "npm install && npm run build",
+        "start": "npm run dev"
     },
     "keywords": [],
     "author": "",
