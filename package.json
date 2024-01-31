@@ -1,18 +1,23 @@
 {
-  "dependencies": {
-    "idb": "^8.0.0"
-  },
+  "name": "mini-project-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "server": "cd server && nodemon server.js --ignore client",
-    "start:dev": "concurrently \"cd server && npm run server\" \"npm run dev\"",
-    "install": "npm install",
-    "client": "cd client && npm start",
-    "dev": "webpack-dev-server",
-    "build:server": "cd server && npm install && npm run build",
-    "start:server": "cd server && node server.js",
-    "build:client": "cd client && npm install && npm run build",
-    "start:client": "cd client && webpack --watchAll",
-    "build": "npm run build:server && npm run build:client",
-    "start": "npm run build && concurrently \"npm run start:server\" \"npm run start:client\""
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
   }
 }

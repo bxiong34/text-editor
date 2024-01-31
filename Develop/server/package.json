@@ -4,19 +4,15 @@
     "description": "",
     "main": "server.js",
     "scripts": {
-        "server": "nodemon server.js --ignore client",
-        "build": "npm install && npm run build",
-        "start": "npm run dev"
+        "server": "node server.js"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.17.1",
-        "stale-while-revalidate-cache": "^1.2.0",
-        "workbox-strategies": "^7.0.0"
+        "express": "^4.17.1"
     },
     "devDependencies": {
-        "nodemon": "^3.0.3"
+        "nodemon": "^2.0.4"
     }
 }
