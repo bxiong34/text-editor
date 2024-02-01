@@ -9,7 +9,7 @@
     "server": "",
     "build": "",
     "install": "",
-    "client": ""
+    "client": "cd Develop/client && npm start"
   },
   "keywords": [],
   "author": "",
