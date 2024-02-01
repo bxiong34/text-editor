@@ -7,7 +7,7 @@
     "start:dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "npm run build && node server.js",
     "server": "cd Develop/server && nodemon server.js --ignore client",
-    "build": "cd Develop/client && npm run build",
+    "build": "cd Develop/client && npm run build && cd ../server && npm run build",
     "client": "cd Develop/client && npm start"
   },
   "keywords": [],
