@@ -30,6 +30,6 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 registerRoute(({ request }) => ['style', 'script', 'worker'].includes(request.destination),
 new CacheFirst({
   // Name of the cache storage.
-  cacheName: 'asset-cache',
+  cacheName: 'page-cache',
   pageCache,
 }));
