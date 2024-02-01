@@ -46,7 +46,7 @@ THEN I should have proper build scripts for a webpack application
 
 The following animation demonstrates the application's functionality:
 
-![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](./Assets/00-demo.gif)
+![Demonstration of the finished Module 19 Challenge being used in the browser and then installed.](![Alt text](assets/images/text-editor.gif))
 
 
 # Installation
